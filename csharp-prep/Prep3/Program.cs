@@ -9,11 +9,13 @@ class Program
 
         // Console.Write($"The magic number is: {magicNum}");
         int userNum = -1;
+        int guessNum = 0;
 
         while (magicNum != userNum)
         {
-            Console.Write("What is your guess?");
+            Console.Write("What is your guess? ");
             userNum = int.Parse(Console.ReadLine());
+            guessNum++;
 
             if (magicNum > userNum)
             {
@@ -26,7 +28,7 @@ class Program
             else
             {
                 Console.WriteLine($"You guessed it! the magic number was {magicNum}");
-
+                Console.Write($"You guessed {guessNum} time(s)");
             }
         }
     }
