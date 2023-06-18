@@ -30,5 +30,7 @@ class Program
         {
             gradeLetter = "F";
         }
+
+        Console.WriteLine($"Your grade is: {gradeLetter}");
     }
 }
