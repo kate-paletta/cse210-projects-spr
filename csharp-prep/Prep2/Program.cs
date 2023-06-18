@@ -10,6 +10,25 @@ class Program
 
         string gradeLetter = "";
 
-        
+        if (gradePercent >= 90)
+        {
+            gradeLetter = "A";
+        }
+        else if (gradePercent >= 80)
+        {
+            gradeLetter = "B";
+        }
+        else if (gradePercent >= 70)
+        {
+            gradeLetter = "C";
+        }
+        else if (gradePercent >= 60)
+        {
+            gradeLetter = "D";
+        }
+        else 
+        {
+            gradeLetter = "F";
+        }
     }
 }
